@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <ImageView
+        android:id="@+id/logomainpg"
+        android:layout_width="241dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon2" />
+
+    <Button
+        android:id="@+id/loginbutt"
+        android:layout_width="185dp"
+        android:layout_height="61dp"
+        android:background="@drawable/loginbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logomainpg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/othse"
+        android:layout_width="192dp"
+        android:layout_height="58dp"
+        android:background="@drawable/service_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tapcallpoltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap Help Button to Call Police"
+        android:textColor="#010203"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/othse"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Button
+        android:id="@+id/policeactionbutt"
+        android:layout_width="237dp"
+        android:layout_height="232dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tapcallpoltxt"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/mylcoationbutt"
+        android:layout_width="213dp"
+        android:layout_height="65dp"
+        android:background="@drawable/mylocation_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/policeactionbutt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
